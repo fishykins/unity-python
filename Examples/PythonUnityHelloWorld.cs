@@ -9,8 +9,7 @@ namespace Exodrifter.UnityPython.Examples
 			var engine = UnityPython.CreateEngine(new string[] {"UnityEngine"});
 			var scope = engine.CreateScope();
 
-			string code = "import UnityEngine\n";
-			code += "UnityEngine.Debug.Log('Hello world!')";
+			string code = "import UnityEngine\nUnityEngine.Debug.Log('Hello world!')";
 
 			var source = engine.CreateScriptSourceFromString(code);
 			source.Execute(scope);
